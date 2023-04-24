@@ -1,0 +1,61 @@
+[
+  {
+    "name": "Comhype",
+    "labels": ["React Native", "Laravel", "Websocket", "Stripe"],
+    "description": "Comhype est une application alliant statistique d’impression et financement participatif.<br /><br />Les porteurs de projet en pleine levée de fond ou en étude de marché expose leur projet à des visiteurs/investisseurs.",
+    "image": "/assets/projets/comhype.png",
+    "buttons": [
+      {
+        "url": "https://github.com/com-hype",
+        "title": "Code source"
+      }
+    ]
+  },
+  {
+    "name": "Bank paradise",
+    "labels": ["ReactJS", "Redux toolkit", "Laravel", "Websocket"],
+    "description": "Bank paradise est un outil permettant à des joueurs faisant du role play de simuler des transactions bancaires en jeu tout en y ajoutant du réalisme et de la modération.",
+    "image": "/assets/projets/bank-paradise.png",
+    "buttons": [
+      {
+        "url": "https://beta.bank-paradise.fr/",
+        "title": "Visiter"
+      },
+      {
+        "url": "https://github.com/bank-paradise",
+        "title": "Code source"
+      }
+    ]
+  },
+  {
+    "name": "Bonappli",
+    "labels": ["ReactJS", "NextJS", "Redux toolkit", "NodeJS"],
+    "description": "Bonappli est une solution pour créer sa carte personnalisée.<br/>Dans le cadre de mon alternance, j’ai contribuer à la réalisation du projet.",
+    "image": "/assets/projets/bonappli.png",
+    "buttons": [
+      {
+        "url": "https://bonappli.fr/",
+        "title": "Visiter"
+      }
+    ]
+  },
+  {
+    "name": "Exalted-RP",
+    "labels": ["from scratch", "bootstrap"],
+    "description": "A la demande du groupe discord Exalted RP, j’ai conçu et développé leur site officiel.",
+    "image": "/assets/projets/exalted-rp.png",
+    "buttons": [
+      {
+        "url": "https://exalted-rp.dantindurand.fr/",
+        "title": "Visiter"
+      }
+    ]
+  },
+  {
+    "name": "Asvadia",
+    "labels": ["NextJS", "Laravel", "Mono repo"],
+    "description": "Réalisation alternative du site Asvadia, serveur minecraft francophone.  Avec un BO et une API",
+    "image": "/assets/projets/asvadia.png",
+    "buttons": []
+  }
+]
