@@ -37,3 +37,7 @@
   z-index: -999999;
   opacity: 0;
 }
+
+body {
+  scroll-behavior: smooth;
+}

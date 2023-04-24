@@ -9,21 +9,25 @@ import StackSection from "@/components/sections/Stack";
 import ProjectsSection from "@/components/sections/Projects";
 import ContactSection from "@/components/sections/Contact";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 function Home() {
+  const [renderInClientSide, setRenderInClientSide] = useState(false);
   const [isWelcomeOpen, setIsWelcomeOpen] = useState(false);
   const pageRef = useRef(null);
 
   useEffect(() => {
     AOS.init();
+    setRenderInClientSide(true);
   }, []);
 
   return (
     <Fragment>
       <Welcome onOpen={() => setIsWelcomeOpen(true)} />
       <main className="h-screen flex relative">
-        <CodeEditor pageRef={pageRef} />
+        {renderInClientSide && <CodeEditor pageRef={pageRef} />}
         <div className="flex-1 h-fit" ref={pageRef}>
+          <Navbar />
           <IntroductionSection isLoad={isWelcomeOpen} />
           <StackSection />
           <ProjectsSection />

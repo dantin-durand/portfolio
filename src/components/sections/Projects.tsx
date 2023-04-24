@@ -4,7 +4,10 @@ import projects from "@/data/projects.json";
 
 export default function ProjectsSection() {
   return (
-    <section className="px-5 md:px-20 min-h-screen flex flex-col justify-center overflow-hidden">
+    <section
+      className="px-5 md:px-20 min-h-screen flex flex-col justify-center overflow-hidden"
+      id="projects"
+    >
       <h1
         className="text-3xl md:text-6xl font-monserrat font-bold pt-20 leading-tight text-blue_accent"
         data-aos="fade-up"

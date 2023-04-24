@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fr-FR !font-mono">
+    <html lang="fr-FR !font-mono scroll-smooth">
       <body className="bg-[#282A35] text-white">
         {children}
         <Analytics />

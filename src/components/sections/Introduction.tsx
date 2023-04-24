@@ -6,14 +6,17 @@ import LinkedInIcon from "../icons/LinkedIn";
 
 export default function IntroductionSection({ isLoad = false }) {
   return (
-    <section className="md:min-h-screen flex flex-col md:justify-center">
+    <section
+      className="md:min-h-screen flex flex-col md:justify-center"
+      id="about"
+    >
       <div
         className={joinClasses(
           "px-5 md:px-20 transition-all duration-500",
           isLoad ? "opacity-100" : "opacity-0"
         )}
       >
-        <h1 className="text-3xl md:text-6xl font-monserrat font-bold pt-10 md:pt-20 leading-tight text-primary">
+        <h1 className="text-3xl md:text-6xl font-monserrat font-bold pt-20 leading-tight text-primary">
           Développeur fullstack
         </h1>
 
@@ -28,13 +31,22 @@ export default function IntroductionSection({ isLoad = false }) {
         </p>
 
         <div className="flex gap-8 text-blue_accent mt-10">
-          <a href="https://github.com/dantin-durand">
+          <a
+            href="https://github.com/dantin-durand"
+            className="hover:scale-110 transform transition-all duration-500"
+          >
             <GithubIcon />
           </a>
-          <a href="https://www.instagram.com/dantin.durand/">
+          <a
+            href="https://www.instagram.com/dantin.durand/"
+            className="hover:scale-110 transform transition-all duration-500"
+          >
             <InstagramIcon />
           </a>
-          <a href="https://www.linkedin.com/in/dantindurand/">
+          <a
+            href="https://www.linkedin.com/in/dantindurand/"
+            className="hover:scale-110 transform transition-all duration-500"
+          >
             <LinkedInIcon />
           </a>
         </div>
@@ -59,6 +71,13 @@ export default function IntroductionSection({ isLoad = false }) {
             <h4 className="text-lg text-secondary font-bold">
               Formation en webdesign
             </h4>
+            <a
+              className="text-sm text-gray-500 font-light mb-2"
+              href="http://www.mjm-design.com/formation/webdesign"
+              target="_blank"
+            >
+              MJM Graphic Design
+            </a>
             <ul className="text-sm flex flex-col gap-1">
               <li>UX/UI</li>
               <li>Motion design</li>
@@ -76,6 +95,13 @@ export default function IntroductionSection({ isLoad = false }) {
             <h4 className="text-lg text-secondary font-bold">
               Bachelor développement Web et Mobile
             </h4>
+            <a
+              className="text-sm text-gray-500 font-light mb-2"
+              href="https://ecole-webstart.com/formation-developpement-web-et-mobile/"
+              target="_blank"
+            >
+              Webstart (accès direct en 2ème année)
+            </a>
             <ul className="text-sm flex flex-col gap-1">
               <li>Laravel</li>
               <li>VueJS & ReactJS</li>
@@ -92,8 +118,15 @@ export default function IntroductionSection({ isLoad = false }) {
             <div className="w-6 h-6 bg-primary rounded-full" />
             <h2 className="text-3xl text-primary font-bold mt-3">2023</h2>
             <h4 className="text-lg text-secondary font-bold">
-              Master dev manager Full-Stack{" "}
+              Master dev manager Full-Stack
             </h4>
+            <a
+              className="text-sm text-gray-500 font-light mb-2"
+              href="https://www.efrei.fr/programmes-experts/mastere-developpeur-full-stack/"
+              target="_blank"
+            >
+              Efrei Paris
+            </a>
             <ul className="text-sm flex flex-col gap-1">
               <li>GraphQL</li>
               <li>NestJS</li>

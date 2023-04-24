@@ -4,7 +4,7 @@ import TechnicalStack from "../icons/Stack";
 export default function StackSection() {
   return (
     <section
-      className="px-5 md:px-20 flex flex-col justify-center min-h-[70vh]"
+      className="px-5 md:px-20 flex flex-col justify-center md:min-h-screen"
       id="stack"
     >
       <h1
