@@ -68,7 +68,7 @@ export default function Welcome({ onOpen }: { onOpen: () => void }) {
         </button>
       </div>
 
-      <div className="text-[3vw] md:text-base font-mono flex items-center absolute bottom-5 left-5 max-w-screen overflow-hidden">
+      <div className="text-[3vw] md:text-base font-mono flex items-center absolute bottom-20 md:bottom-5 left-5 max-w-screen overflow-hidden">
         <span className="text-green-500 whitespace-pre">
           dantin-durand@portfolio:
         </span>

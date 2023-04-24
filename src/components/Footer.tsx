@@ -15,7 +15,7 @@ export default function Footer() {
             }
           }}
         >
-          ...et avant c'était comment ?
+          ...et avant c&apos;était comment ?
         </a>
       </p>
     </footer>
