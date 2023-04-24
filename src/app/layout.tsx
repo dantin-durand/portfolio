@@ -1,4 +1,4 @@
-import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 export const metadata = {
@@ -14,7 +14,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr-FR !font-mono">
-      <body className="bg-[#282A35] text-white">{children}</body>
+      <body className="bg-[#282A35] text-white">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
