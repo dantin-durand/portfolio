@@ -14,7 +14,7 @@ export default function ContactSection() {
 
   return (
     <section
-      className="px-5 md:px-20 flex flex-col justify-center md:min-h-[100vh] bg-no-repeat bg-right-bottom max-w-7xl"
+      className="px-5 md:px-20 flex flex-col justify-center min-h-screen bg-no-repeat bg-right-bottom max-w-7xl"
       id="contact"
       style={{ backgroundImage: "url('/assets/contact.svg')" }}
     >

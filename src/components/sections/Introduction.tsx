@@ -59,7 +59,7 @@ export default function IntroductionSection({ isLoad = false }) {
           )}
         />
         {/* div avec une grid de 3 colonnes */}
-        <div className="grid grid-cols-3 gap-10 px-20 -mt-3 min-w-[1000px]">
+        <div className="grid grid-cols-3 gap-10 px-20 -mt-3 min-w-[1000px] md:min-w-0">
           <div
             className={joinClasses(
               "transition-all duration-500",

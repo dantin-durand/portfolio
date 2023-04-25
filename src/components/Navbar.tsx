@@ -48,6 +48,21 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    const navbar: HTMLElement | null = document.querySelector("nav");
+    if (navbar) {
+      const queryActiveElement: HTMLElement | null = document.querySelector(
+        `#nav-${activeElement}`
+      );
+      if (queryActiveElement) {
+        navbar.scrollTo({
+          left: queryActiveElement.offsetLeft,
+          behavior: "smooth",
+        });
+      }
+    }
+  }, [activeElement]);
+
   return (
     <nav className="bg-[#21222B] fixed w-full z-10 overflow-auto">
       <ul className="flex items-center text-[#6572A0]">
@@ -56,11 +71,14 @@ export default function Navbar() {
             href={item.href}
             key={index}
             onClick={() => setActiveElement(index)}
+            id={`nav-${index}`}
           >
             <li
               className={joinClasses(
                 "px-6 py-3 pr-2 flex items-center gap-3 border-r border-[#191A20] group",
-                activeElement === index ? "text-white" : ""
+                activeElement === index
+                  ? "text-white bg-[#282A35] border-t border-t-primary"
+                  : ""
               )}
             >
               <ReactIcon />

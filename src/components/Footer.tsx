@@ -5,7 +5,7 @@ export default function Footer() {
         Copyright © {new Date().getFullYear()} Dantin DURAND
         <a
           href="https://old.dantindurand.fr"
-          className="opacity-50 absolute right-10"
+          className="opacity-50 absolute right-10 hidden md:inline-block"
           onClick={(e) => {
             if (window.confirm("Êtes-vous sûr ? 🤔")) {
               e.preventDefault();
