@@ -30,7 +30,14 @@ export default function IntroductionSection({ isLoad = false }) {
           de projets innovants dans le domaine du web et du mobile 🚀.
         </p>
 
-        <div className="flex gap-8 text-blue_accent mt-10">
+        <div className="flex gap-8 items-center text-blue_accent mt-10">
+          <a
+            href="/assets/cv-dantin-durand.pdf"
+            download
+            className="bg-[#494C5D] text-white px-8 py-3 rounded-full inline-block hover:opacity-80"
+          >
+            Mon CV
+          </a>
           <a
             href="https://github.com/dantin-durand"
             className="hover:scale-110 transform transition-all duration-500"
