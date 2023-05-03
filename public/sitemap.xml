@@ -2,14 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://dantindurand.fr/#about</loc>
+    <title>À propos</title>
   </url>
   <url>
     <loc>https://dantindurand.fr/#stack</loc>
+    <title>Ma stack</title>
   </url>
   <url>
     <loc>https://dantindurand.fr/#projects</loc>
+    <title>Mes projets</title>
   </url>
   <url>
     <loc>https://dantindurand.fr/#contact</loc>
+    <title>Contactez-moi</title>
   </url>
 </urlset>

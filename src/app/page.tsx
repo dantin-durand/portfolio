@@ -17,13 +17,26 @@ function Home() {
   const pageRef = useRef(null);
 
   useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      setIsWelcomeOpen(true);
+      const section = document.querySelector(hash);
+
+      if (section) {
+        document.body.style.overflow = "auto";
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
     AOS.init();
     setRenderInClientSide(true);
   }, []);
 
   return (
     <Fragment>
-      <Welcome onOpen={() => setIsWelcomeOpen(true)} />
+      <Welcome
+        isVisible={!isWelcomeOpen}
+        onOpen={() => setIsWelcomeOpen(true)}
+      />
       <main className="h-screen flex relative">
         {renderInClientSide && <CodeEditor pageRef={pageRef} />}
         <div className="flex-1 h-fit" ref={pageRef}>

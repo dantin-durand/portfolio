@@ -2,7 +2,13 @@
 import { useEffect, useRef, useState } from "react";
 import joinClasses from "@/helpers/joinClasses";
 
-export default function Welcome({ onOpen }: { onOpen: () => void }) {
+export default function Welcome({
+  isVisible,
+  onOpen,
+}: {
+  isVisible: boolean;
+  onOpen: () => void;
+}) {
   const [isStarted, setIsStarted] = useState(false);
   const [isHide, setIsHide] = useState(false);
   const textRef = useRef<HTMLDivElement>(null);
@@ -39,7 +45,7 @@ export default function Welcome({ onOpen }: { onOpen: () => void }) {
     <header
       className={joinClasses(
         "h-screen bg-slate-900 fixed text-white w-full flex flex-col justify-center items-center z-20",
-        isHide
+        isHide || !isVisible
           ? "-translate-y-full transition-all duration-500"
           : "translate-y-0"
       )}
